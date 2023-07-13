@@ -1,0 +1,468 @@
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+.toast-message {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.toast-login {
+  background-color: black !important;
+  color: "white" !important;
+}
+::-webkit-scrollbar-track {
+  background: rgb(131, 131, 131);
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(48, 48, 48);
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+input[type="submit"]:focus {
+  background-color: none !important;
+}
+textarea {
+  transition: linear 0.3s !important;
+  border-bottom: 2px solid transparent;
+}
+textarea:focus {
+  color: white;
+  outline: none !important;
+  border-bottom: 2px solid #5082ff !important;
+}
+input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+.navbar1.active {
+  animation: fadeNav 0.7s linear forwards;
+  background: red !important;
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 10%);
+}
+
+.navbar1 {
+  transition: all 0.5s;
+  opacity: 1;
+  animation: fadeNavOut 0.9s linear forwards;
+}
+
+@keyframes fadeNav {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------------Loader------------------------------------ */
+#spinner {
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  border: 10px solid #5082ff;
+  border-radius: 50%;
+  border-top: 10px solid transparent;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#Profilespinner {
+  z-index: 1;
+  width: 29px;
+  height: 29px;
+  border: 3.5px solid #5082ff;
+  border-radius: 50%;
+  border-top: 3.5px solid transparent;
+  -webkit-animation: spin 0.7s linear infinite;
+  animation: spin 0.7s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ------------------------------------Login------------------------------------ */
+
+#loginSignup {
+  background: url("./Images/login.png");
+  height: 100vh;
+}
+
+/* ------------------------------------Home------------------------------------ */
+.css-hyum1k-MuiToolbar-root {
+  display: none !important;
+}
+.itemsCard:hover {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.9) !important;
+  border-radius: 15px !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.openEditor,
+.removeBtn {
+  opacity: 0;
+}
+.deleteImg:hover {
+  background-color: #5082ff;
+  border: 2px solid #5082ff !important;
+}
+.itemsCard:hover .openEditor {
+  opacity: 1;
+}
+.itemsCard:hover .removeBtn {
+  opacity: 1;
+}
+.itemsCard:hover .hideText {
+  opacity: 0;
+}
+.openEditor:hover {
+  background-color: #5082ff;
+  border: 2px solid #5082ff !important;
+  color: white !important;
+}
+.imageBtn:hover {
+  border: 1px solid #0d6efd !important;
+}
+.addItems,
+.itemsCard {
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.2) !important;
+}
+.addItems:hover {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.9) !important;
+  background-color: #333333 !important;
+}
+#home {
+  background-color: black;
+}
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  z-index: 1 !important;
+}
+.contentBg {
+  background: url("./Images/download.png") no-repeat;
+  transition: opacity 0.4s ease 0s, transform 200ms ease-out 0s,
+    background-position 200ms linear 0s, filter 800ms ease-in 0s;
+  filter: initial;
+  background-position: 60% 80%;
+  background-attachment: fixed;
+  /* transform: perspective(1000px) scale(1); */
+}
+.MuiToolbar-root {
+  position: absolute !important;
+}
+.DashTabs .tab.active {
+  border-radius: 15px;
+  background-color: #5082ff !important;
+}
+.tab {
+  color: white;
+}
+
+/* ---------------------------------------------calender----------------------------------------- */
+
+.rbc-toolbar button:hover,
+button:focus {
+  outline: none;
+  color: white !important;
+  background-color: #5082ff !important;
+}
+.rbc-today {
+  background-color: #c2d2fb !important;
+}
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background-color: #5082ff !important;
+  color: white !important;
+}
+.datepicker:focus {
+  outline: none !important;
+  border-bottom: 2px solid #5082ff;
+}
+
+.datepicker:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.datepicker::placeholder:focus {
+  color: #5082ff !important;
+}
+.css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: "#5082ff" !important;
+}
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root {
+  background-color: #5082ff12 !important;
+}
+.datepicker {
+  background-color: #5082ff12;
+  transition: 0.4s;
+  border: none;
+  padding-inline: 11px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1.5px solid grey;
+  height: 56px !important;
+}
+.rbc-btn-group {
+  border-radius: 20px !important;
+  box-shadow: 1px 1px 13px #e7e7e7, -1px -1px 13px #fff;
+}
+.rbc-btn-group > button:last-child:not(:first-child) {
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  padding: 16px 19px !important;
+  border-bottom-right-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  border: none !important;
+}
+.rbc-btn-group > button:not(:first-child):not(:last-child) {
+  padding: 16px 19px !important;
+  border: none !important;
+}
+.rbc-btn-group > button:first-child:not(:last-child) {
+  border-bottom-right-radius: 0 !important;
+  border: none !important;
+  padding: 16px 19px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+.rbc-toolbar-label {
+  font-size: 24px !important;
+}
+.rbc-toolbar-label:before {
+  background-color: #5082ff;
+  border-radius: 30px;
+  bottom: -10px;
+  content: "";
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  transition: 0.5s;
+  width: 13%;
+}
+.rbc-month-view,
+.rbc-time-view,
+.rbc-agenda-view {
+  margin-top: 20px !important;
+  border: none !important;
+  box-shadow: 3px 3px 10px #e9e9e9, -3px -3px 10px #fff;
+  font-size: 16px;
+}
+.rbc-agenda-table {
+  border: none !important;
+}
+
+/* ---------------------------------------------------home---------------------------------------------- */
+.tab.active {
+  color: #5082ff;
+  border-bottom: 2px solid #5082ff;
+}
+::-webkit-scrollbar {
+  width: 0px !important;
+  height: 0px !important;
+}
+.DraftEditor-root:focus {
+  border: 1px solid #03a9f4 !important;
+}
+.DraftEditor-editorContainer {
+  min-height: 60vh !important;
+  max-height: 540px !important;
+  font-size: 18px;
+}
+.DraftEditor-root {
+  padding: 10px !important;
+  margin-top: 80px;
+  color: white !important;
+}
+.rdw-editor-toolbar {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 10px !important;
+  box-shadow: 1px 1px 4px 0px #c0c0c04f;
+}
+.rdw-option-wrapper {
+  background: #fbfbfb !important;
+  border: none !important;
+}
+.rdw-link-modal,
+.rdw-emoji-modal,
+.rdw-image-modal,
+.rdw-embedded-modal,
+.rdw-colorpicker-modal {
+  box-shadow: none !important;
+}
+.rdw-embedded-modal-btn-section {
+  margin-top: 10px;
+}
+.rdw-embedded-modal,
+.rdw-link-modal {
+  height: fit-content !important;
+}
+
+/* ---------------------------------------------------Recorder---------------------------------------------- */
+
+.audio-recorder {
+  background-color: white !important;
+  box-shadow: 0 2px 5px #bebebe45 !important;
+  border-radius: 20px;
+  color: #5082ff;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  transition: all 0.2s ease-in;
+}
+audio {
+  display: block;
+  margin-top: 10px;
+}
+
+/* ----------------------------------------------------Profile-------------------------------------------------- */
+#profile {
+  background: url("./Images/download.png") no-repeat;
+  transition: opacity 0.4s ease 0s, transform 200ms ease-out 0s,
+    background-position 200ms linear 0s, filter 800ms ease-in 0s;
+  filter: initial;
+  background-position: 60% 80%;
+  background-attachment: fixed;
+}
+
+/* -----------------------------------------------------pdfViewer----------------------------------------------------- */
+.rpv-core__viewer {
+  height: 93vh !important;
+}
+
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root {
+  color: white !important;
+}
+.css-e4w4as-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.28) !important;
+}
+.css-o943dk-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.28);
+}
+
+/* -----------------------------------------------------transaction----------------------------------------------------- */
+
+th,
+td {
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+th {
+  background-color: black;
+  color: white;
+}
+#transactions .tab.active {
+  border-bottom: 3px solid #5082ff !important;
+  color: #5082ff !important;
+}
+#transactions .tab:hover {
+  outline: none !important;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+  animation: drop 0.4s linear forwards;
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(8%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-menu {
+  opacity: 1;
+  width: fit-content;
+  left: -138px;
+  padding: 0;
+  margin: 0;
+  top: 24px;
+}
+.dropdown-menu li {
+  padding: 4px 0px;
+  cursor: pointer;
+}
+.dropdown-menu li:hover {
+  color: #5082ff !important;
+}
+.ml-auto {
+  margin-left: auto;
+}
+
+#filled-basic {
+  color: white;
+}
